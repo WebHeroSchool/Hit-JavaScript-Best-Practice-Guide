@@ -75,7 +75,7 @@ var y = new String("John");
 * [] вместо new Array()
 * /()/ вместо new RegExp()
 * function (){} вместо new Function()
-```css
+```js
 let x1 = {};           // new object
 let x2 = "";           // new primitive string
 let x3 = 0;            // new primitive number
@@ -87,7 +87,7 @@ let x7 = function(){}; // new function object
 
 ### 5. Избегать автоматического преобразования типов
 Числа могут быть случайно преобразованы в строки или NaN (не число).
-```css
+```js
 let x = 5 + 7;       // x.valueOf() = 12,  typeof x - number
 let x = 5 + "7";     // x.valueOf() = 57,  typeof x - string
 let x = 5 - "7";     // x.valueOf() = -2,  typeof x - number
@@ -96,7 +96,7 @@ let x = 5 - "x";     // x.valueOf() = NaN, typeof x - number
 
 ### 6. Устанавливать параметры по-умолчанию
 Иначе при отсутствие параметра при вызове устанавливается значение undefined
-```css
+```js
 function (a=1, b=1) { 
   /*function code*/
 }
@@ -106,7 +106,7 @@ function (a=1, b=1) {
 
 При сравнении использовать === вместо ==
 
-```css
+```js
 [10] === 10    // is false
 [10]  == 10    // is true
 '10' == 10     // is true
